@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
+      <title></title>
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h2 id="logo">MERA<span>Trials</span></h2>
+      </header>
+
+      <main>
+        <div class="hero">
+          <div class="left_icon">
+              <i class="fas fa-chevron-left" @click="prevImage"></i>
+          </div>
+
+          <img :src="images[indexImages]" alt="landscape">
+
+          <div class="right_icon">
+              <i class="fas fa-chevron-right" @click="nextImage"></i>
+          </div>
+
+          <div class="active_images">
+            <img v-for= "(image, index) in images" :src = "image" alt="" :class="(index == indexImages) ? 'active': '' ">
+          </div>
+        </div>
+
+
+      </main>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
