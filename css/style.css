@@ -93,6 +93,13 @@ main {
 .left_icon i {
   transform: rotate(900deg);
 }
+.hero h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: white;
+}
 
 .active_images {
   display: flex;
