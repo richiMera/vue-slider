@@ -12,7 +12,7 @@
   <body>
     <div id="root">
       <header>
-        <h2 id="logo">MERA<span>Trials</span></h2>
+        <h2 id="logo">MERA<span>Travels</span></h2>
       </header>
 
       <main>
@@ -28,7 +28,7 @@
           </div>
 
           <div class="active_images">
-            <img v-for= "(image, index) in images" :src = "image" alt="" :class="(index == indexImages) ? 'active': '' ">
+            <img @click="chooseImage(index)"  v-for= "(image, index) in images" :src="image" alt="" :class="(index == indexImages) ? 'active': '' ">
           </div>
         </div>
 

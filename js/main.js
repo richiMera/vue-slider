@@ -19,6 +19,9 @@ var app = new Vue({
       if(this.indexImages == -1) {
         this.indexImages = this.images.length - 1;
       }
-    }
+    },
+    chooseImage: function(index) {
+      this.indexImages = index;
+    },
   }
 });
