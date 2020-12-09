@@ -28,6 +28,7 @@ var app = new Vue({
     },
     chooseImage: function(index) {
       this.indexImages = index;
+      this.indexMessages = index;
     },
   }
 });
