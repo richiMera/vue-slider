@@ -13,18 +13,30 @@
     <div id="root">
       <header>
         <h2 id="logo">MERA<span>Travels</span></h2>
+        <div class="header_links">
+          <ul class="inline_list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pianifica</a></li>
+            <li><a href="#">Benessere</a></li>
+            <li><a href="#">Avventura e Sport</a></li>
+          </ul>
+        </div>
+        <div class="header_icons">
+          <a href="#">Sign In <i class="fas fa-sign-in-alt"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
       </header>
 
       <main>
         <div class="hero">
           <div class="left_icon">
-              <i class="fas fa-chevron-left" @click="prevImage"></i>
+              <i class="fas fa-plane" @click="prevImage"></i>
           </div>
 
           <img :src="images[indexImages]" alt="landscape">
 
           <div class="right_icon">
-              <i class="fas fa-chevron-right" @click="nextImage"></i>
+              <i class="fas fa-plane" @click="nextImage"></i>
           </div>
 
           <div class="active_images">
